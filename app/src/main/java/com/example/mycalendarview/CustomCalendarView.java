@@ -327,6 +327,7 @@ public class CustomCalendarView extends LinearLayout
             getResources().getString(R.string.title_format);
         String titleText = String.format(titleFormat, monthText,
                                          currentCalendar.get(Calendar.YEAR));
+        // layout month
         TextView dateTitle = findViewById(R.id.month);
         if (dateTitle != null)
         {
