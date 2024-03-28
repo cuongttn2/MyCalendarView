@@ -4,6 +4,7 @@
     <declare-styleable name="CustomCalendarView">
         <attr name="calendarTitleTextColor" format="color" />
         <attr name="dayOfWeekTextColor" format="color" />
+        <attr name="weekTextColor" format="color" />
         <attr name="dayOfMonthTextColor" format="color" />
         <attr name="calendarBackgroundColor" format="color" />
         <attr name="disabledDayBackgroundColor" format="color" />

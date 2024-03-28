@@ -7,5 +7,7 @@
     <color name="day_disabled_text_color">#DEDEDE</color>
     <color name="current_day_of_month">@android:color/holo_blue_light</color>
     <color name="yellow">#FFEB3B</color>
+    <color name="purple">#673AB7</color>
+    <color name="green">#4CAF50</color>
 
 </resources>

@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <!--    app:weekTextColor="@color/yellow"-->
 
     <com.example.mycalendarview.CustomCalendarView
         android:id="@+id/calendarView"
@@ -14,6 +15,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:weekTextColor="@color/yellow" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

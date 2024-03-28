@@ -92,6 +92,7 @@ public class CustomCalendarView extends LinearLayout
     private int selectedDayTextColor;
     private int calendarTitleTextColor;
     private int dayOfWeekTextColor;
+    private int weekTextColor;
     private int dayOfMonthTextColor;
     private int currentDayOfMonth;
 
@@ -160,6 +161,9 @@ public class CustomCalendarView extends LinearLayout
         calendarTitleTextColor = resources.getColor(R.color.black);
         weekLayoutBackgroundColor = resources.getColor(R.color.white);
         dayOfWeekTextColor = resources.getColor(R.color.black);
+
+        weekTextColor = resources.getColor(R.color.black);
+
         dayOfMonthTextColor = resources.getColor(R.color.black);
         disabledDayBackgroundColor =
             resources.getColor(R.color.day_disabled_background_color);
@@ -200,6 +204,11 @@ public class CustomCalendarView extends LinearLayout
             typedArray.getColor(R.styleable
                                 .CustomCalendarView_dayOfWeekTextColor,
                                 resources.getColor(R.color.black));
+        weekTextColor =
+            typedArray.getColor(R.styleable
+                                .CustomCalendarView_weekTextColor,
+                                resources.getColor(R.color.black));
+
         dayOfMonthTextColor =
             typedArray.getColor(R.styleable
                                 .CustomCalendarView_dayOfMonthTextColor,
@@ -344,7 +353,11 @@ public class CustomCalendarView extends LinearLayout
             dayOfWeek = findViewById(weekdays[getWeekIndex(i, currentCalendar)
                                               - 1]);
             if (dayOfWeek != null)
+            {
                 dayOfWeek.setText(dayOfTheWeekString);
+                // week text color
+                dayOfWeek.setTextColor(weekTextColor);
+            }
         }
     }
 
